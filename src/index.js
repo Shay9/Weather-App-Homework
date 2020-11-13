@@ -22,7 +22,7 @@ function displayCityResults(response){
 
 
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-    document.querySelector("#wind").innerHTML = Math.round(response.data.main.wind.speed);
+    document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#type").innerHTML = Math.round(response.data.weather[0].main);
 }
 
